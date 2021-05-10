@@ -28,17 +28,17 @@ public class EmployeeList {
 		return result;
 	}
 
-	public Map<String, List<Employee>> mapPersonToCompany() {
-		Map<String, List<Employee>> result = new HashMap<>();
+	public Map<String, List<PersonList>> mapPersonToCompany() {
+		Map<String, List<PersonList>> result = new HashMap<>();
 		for (Employee employee : employees) {
-			List<Employee> existingList = result.get(employee.getCompany());
+			List<PersonList> existingList = result.get(employee.getCompany());
 			if (existingList == null) {
 				existingList = new ArrayList<>();
 			}
-			existingList.add(employee);
+			existingList.add(employee.getName());
 			result.put(employee.getCompany(), existingList);
 		}
-		return result;       // nu inteleg de ce nu imi scoate Employee, doar compania si salariul
+		return result;
 	}
 
 	public int getSumOfSalaries() {
