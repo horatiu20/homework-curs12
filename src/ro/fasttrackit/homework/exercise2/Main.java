@@ -19,7 +19,7 @@ public class Main {
 				new Person(PersonList.IOAN, 66, "grey")
 		));
 
-		System.out.println("All students: " + personType.getPersons());
+		System.out.println("All persons: " + personType.getPersons());
 		System.out.println("Name to Age: " + personType.mapNameToAge());
 		System.out.println("Persons older than: " + personType.mapOlderThan(35));
 		System.out.println("Group by hair colour: " + personType.mapColourToName());
