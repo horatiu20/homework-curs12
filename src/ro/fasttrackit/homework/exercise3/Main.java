@@ -1,5 +1,12 @@
 package ro.fasttrackit.homework.exercise3;
 
+/*3. The Employee is an object that extends Person and adds two fields: company and salary.
+     Have a list of Employees
+a) extract persons that have salaries more than a specified amount
+b) extract a Map that gathers all the persons for a company
+c) calculate the sum of all salaries for all employees
+d) calculate which company gives the biggest salary*/
+
 import ro.fasttrackit.homework.exercise2.PersonList;
 
 import java.util.List;
